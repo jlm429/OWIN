@@ -172,11 +172,14 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\Class2.cs" />
+    <Compile Include="Models\IUsersRepository.cs" />
+    <Compile Include="Models\UsersRepository.cs" />
     <Compile Include="Models\ClassBuilder.cs" />
     <Compile Include="Models\DataClasses.designer.cs" />
     <Compile Include="Models\DataClasses1.designer.cs" />
@@ -242,6 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Users\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
