@@ -12,21 +12,46 @@ namespace WebApplication5.Models
     private readonly string _connectionString;
     public UsersRepository(string connectionString)
     {
-      _connectionString = connectionString;
+        _connectionString = "Data Source=HOME-LAPTOP\\SQLEXPRESS;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+    }
+
+    public UsersRepository()
+    {
+        _connectionString = "Data Source=HOME-LAPTOP\\SQLEXPRESS;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
     }
 
     public String GetTableData()
     {
 
-      using (var conn = new SqlConnection(_connectionString))
-      using (var cmd = conn.CreateCommand())
+      string sql = "Select * from dbo.table_1";
+      SqlConnection conn = new SqlConnection(_connectionString);
+      SqlCommand cmd = new SqlCommand(sql, conn);
+      
+        
+      conn.Open();
+      cmd.ExecuteNonQuery();
+      
+
+      String returnValue = "";
+
+      try
       {
-        conn.Open();
-        cmd.CommandText = "Select * from dbo.Table_1";
-        conn.Close();
+          returnValue = cmd.ExecuteNonQuery().ToString();
+      }
+      catch
+      {
+          returnValue = "do nothing";
+          
+      }
+
+      conn.Close();
+        //conn.Open();
+        //cmd.CommandText = "Select * from dbo.Table_1";
+        //cmd.ExecuteNonQuery(
+        //conn.Close();
         //cmd.Parameters.AddWithValue("@id", id);
-       }
-      return "";
+
+      return returnValue;
       }
     }
   }

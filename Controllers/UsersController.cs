@@ -20,10 +20,11 @@ namespace WebApplication5.Controllers
       _repository = repository;
     }
 
-    public ActionResult Index(int id)
+    public ActionResult Contact()
     {
-      var model = _repository.GetTableData();
-      return View(model);
+      //var model = _repository.GetTableData();
+      ViewBag.Message = _repository.GetTableData();
+      return View();
     }
   }
 }
