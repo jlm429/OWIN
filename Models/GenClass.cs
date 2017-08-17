@@ -38,9 +38,8 @@ public class GenClass
   }
 
   
-  // factory methods
-  //typically would be used to avoid subclassing
-  //but these methods demonstrate the gist of the pattern
+  // factory methods (typically would be used to avoid subclassing)
+
   public Class1 Class1Factory()
   {
     Class1 obj = new Class1();
