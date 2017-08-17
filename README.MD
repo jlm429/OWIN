@@ -5,4 +5,6 @@
 > MVC/ADO.Net connection to MS SQL Server.  
 > Bootstrap mobile templates.  
 
+![Image](https://github.com/jlm429/OWIN/blob/master/images/AUTH.png)
+
 
