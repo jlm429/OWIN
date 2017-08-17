@@ -37,7 +37,10 @@ public class GenClass
     return gen;
   }
 
+  
   // factory methods
+  //typically would be used to avoid subclassing
+  //but these methods demonstrate the gist of the pattern
   public Class1 Class1Factory()
   {
     Class1 obj = new Class1();
