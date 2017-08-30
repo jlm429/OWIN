@@ -23,9 +23,10 @@ namespace WebApplication5.Models
     public String GetTableData()
     {
 
-      string sql = "Select * from dbo.table_1";
+        string sql = "SELECT TOP (1000) [GenKey3],[Test] FROM [master].[dbo].[MyTable]";
       SqlConnection conn = new SqlConnection(_connectionString);
       SqlCommand cmd = new SqlCommand(sql, conn);
+      List<String> dbValues = new List<String>();
       
         
       conn.Open();
@@ -36,7 +37,17 @@ namespace WebApplication5.Models
 
       try
       {
-          returnValue = cmd.ExecuteNonQuery().ToString();
+      
+          using (SqlDataReader dr = cmd.ExecuteReader())
+          {
+              while (dr.Read())
+              {
+                  
+                  String dbValue = dr["Test"].ToString();
+                  dbValues.Add(dbValue);
+              }
+          }
+         
       }
       catch
       {
@@ -44,12 +55,16 @@ namespace WebApplication5.Models
           
       }
 
+      finally
+      { 
       conn.Close();
-        //conn.Open();
-        //cmd.CommandText = "Select * from dbo.Table_1";
-        //cmd.ExecuteNonQuery(
-        //conn.Close();
-        //cmd.Parameters.AddWithValue("@id", id);
+      }
+
+
+      foreach (var dbValue in dbValues)
+      {
+          returnValue = returnValue + " " + dbValue;
+      }
 
       return returnValue;
       }
