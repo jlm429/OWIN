@@ -80,3 +80,7 @@ c:\users\ula\documents\visual studio 2017\Projects\WebApplication5\WebApplicatio
 c:\users\ula\documents\visual studio 2017\Projects\WebApplication5\WebApplication5\obj\Release\WebApplication5.csprojResolveAssemblyReference.cache
 c:\users\ula\documents\visual studio 2017\Projects\WebApplication5\WebApplication5\obj\Release\WebApplication5.dll
 c:\users\ula\documents\visual studio 2017\Projects\WebApplication5\WebApplication5\obj\Release\WebApplication5.pdb
+C:\Users\Ula\documents\visual studio 2017\Projects\WebApplication5\WebApplication5\bin\EntityFramework.dll
+C:\Users\Ula\documents\visual studio 2017\Projects\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.dll
+C:\Users\Ula\documents\visual studio 2017\Projects\WebApplication5\WebApplication5\bin\EntityFramework.xml
+C:\Users\Ula\documents\visual studio 2017\Projects\WebApplication5\WebApplication5\bin\EntityFramework.SqlServer.xml

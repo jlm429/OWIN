@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
 using System.Data.Linq;
+using WebApplication5.Controllers;
 
 namespace WebApplication5.Models
 {
@@ -23,6 +24,12 @@ namespace WebApplication5.Models
     public String GetTableData()
     {
 
+      //using Entites (ORM)
+      exampleDB3Entities exampleDB = new exampleDB3Entities();
+
+
+
+      //using ADO.net connection
         string sql = "SELECT TOP (1000) [GenKey3],[Test] FROM [master].[dbo].[MyTable]";
       SqlConnection conn = new SqlConnection(_connectionString);
       SqlCommand cmd = new SqlCommand(sql, conn);

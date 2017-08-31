@@ -21,6 +21,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/ApplicationInsights.config">
       <publishTime>08/16/2017 14:44:25</publishTime>
     </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/03/2017 23:44:16</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/03/2017 23:44:16</publishTime>
+    </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 15:07:42</publishTime>
     </File>
@@ -175,10 +181,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
     <File Include="bin/WebApplication5.dll">
-      <publishTime>08/16/2017 15:08:42</publishTime>
+      <publishTime>08/30/2017 18:36:49</publishTime>
     </File>
     <File Include="bin/WebApplication5.pdb">
-      <publishTime>08/16/2017 15:08:42</publishTime>
+      <publishTime>08/31/2017 06:10:49</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>09/10/2013 18:28:38</publishTime>
@@ -191,6 +197,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Site.css">
       <publishTime>08/16/2017 14:43:27</publishTime>
+    </File>
+    <File Include="Controllers/Model1.edmx.diagram">
+      <publishTime>08/31/2017 06:05:21</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>08/16/2017 14:43:27</publishTime>
@@ -211,10 +220,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2017 14:43:27</publishTime>
     </File>
     <File Include="Models/DataClasses.dbml">
-      <publishTime>08/16/2017 14:56:51</publishTime>
+      <publishTime>08/16/2017 16:06:01</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>08/16/2017 14:44:31</publishTime>
+      <publishTime>08/31/2017 05:28:55</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>08/16/2017 14:43:44</publishTime>
@@ -259,10 +268,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2017 14:53:18</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>08/16/2017 15:08:02</publishTime>
+      <publishTime>08/17/2017 10:01:58</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>08/16/2017 14:53:36</publishTime>
+      <publishTime>08/16/2017 15:13:56</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>08/16/2017 14:44:16</publishTime>
@@ -280,7 +289,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2017 14:43:27</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/16/2017 14:46:20</publishTime>
+      <publishTime>08/31/2017 06:10:52</publishTime>
     </File>
   </ItemGroup>
 </Project>
