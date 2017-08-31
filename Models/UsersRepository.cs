@@ -7,7 +7,7 @@ using System.Data.Linq;
 using WebApplication5.Controllers;
 
 namespace WebApplication5.Models
-{ 
+{
   public class UsersRepository : IUsersRepository
   {
     private readonly string _connectionString;
@@ -24,12 +24,28 @@ namespace WebApplication5.Models
     public String GetTableData()
     {
 
-      //using Entity Framework (ORM)
+      //using Entites (ORM)
       exampleDB3Entities exampleDB = new exampleDB3Entities();
+      Random rnd = new Random();
+
+      //insert row
+      var data = new MyTable
+      {
+        GenKey3 = rnd.Next(40, 4000),
+        Test = "blah",
+
+      };
+      
+      exampleDB.MyTables.Add(data);
+      exampleDB.SaveChanges();
+
+      //LINQ
+      var selectedData = from MyTable in exampleDB.MyTables.Include("MyTable")
+                         where MyTable.GenKey3 > 4
+                         select MyTable.Test;
 
 
-
-      //using ADO.net connection
+        //using ADO.net connection
         string sql = "SELECT TOP (1000) [GenKey3],[Test] FROM [master].[dbo].[MyTable]";
       SqlConnection conn = new SqlConnection(_connectionString);
       SqlCommand cmd = new SqlCommand(sql, conn);
@@ -68,7 +84,7 @@ namespace WebApplication5.Models
       }
 
 
-      foreach (var dbValue in dbValues)
+      foreach (var dbValue in selectedData)
       {
           returnValue = returnValue + " " + dbValue;
       }
