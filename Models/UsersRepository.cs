@@ -7,7 +7,7 @@ using System.Data.Linq;
 using WebApplication5.Controllers;
 
 namespace WebApplication5.Models
-{
+{ 
   public class UsersRepository : IUsersRepository
   {
     private readonly string _connectionString;

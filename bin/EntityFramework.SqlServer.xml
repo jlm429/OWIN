@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <doc>
-    <assembly>
+    <assembly> 
         <name>EntityFramework.SqlServer</name>
     </assembly>
     <members>
