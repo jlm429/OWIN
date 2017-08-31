@@ -24,7 +24,7 @@ namespace WebApplication5.Models
     public String GetTableData()
     {
 
-      //using Entites (ORM)
+      //using Entity (ORM)
       exampleDB3Entities exampleDB = new exampleDB3Entities();
       Random rnd = new Random();
 
