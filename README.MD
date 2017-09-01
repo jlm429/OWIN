@@ -2,8 +2,8 @@
 
 > Builder and trivial factory pattern examples using .NET/MVC/C#.  
 > Application View uses MS OWIN authentication.  
-> MVC/ADO.Net connection to MS SQL Server. 
-> Entity framework for ORM 
+> MVC/ADO.Net connection to MS SQL Server.  
+> Entity framework for ORM.  
 > Bootstrap mobile templates.  
 
 ![Image](https://github.com/jlm429/OWIN/blob/master/images/AUTH.PNG)
