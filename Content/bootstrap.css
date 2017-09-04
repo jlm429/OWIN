@@ -2091,7 +2091,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: #333333;
   border-color: #357ebd;
 }
 
@@ -4934,7 +4934,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #d6e9c6;
 }
 
 .jumbotron h1 {
