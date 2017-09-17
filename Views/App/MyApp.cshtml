@@ -1,0 +1,18 @@
+﻿@{
+
+
+    //call factory Method
+    GenClass gen = new GenClass();
+    gen = gen.createObj("class1");
+
+    GenClass gen2 = new GenClass("class2");
+    gen2 = gen.createObj("class2");
+
+    ViewBag.Title = gen2.getString();
+    ViewBag.Message = gen.getString();
+
+} }
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+

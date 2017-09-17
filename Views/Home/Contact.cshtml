@@ -1,34 +1,12 @@
 ﻿@{
 
 
-
-       
-
-
-
-        //SqlConnection database = new SqlConnection("Data Source=HOME-LAPTOP\\SQLEXPRESS;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-        //string sql = "Select * from dbo.table_1";
-        //SqlCommand cmd = new SqlCommand(sql, database);
-        //cmd.Parameters.Add("@param1", SqlDbType.Int).value = klantId;
-        //cmd.Parameters.Add("@param2", SqlDbType.NChar, 50).value = klantNaam;
-        //cmd.CommandType = CommandType.Text;
-
-        //SqlCommand cmd = new SqlCommand(sql, database); 
-        //database.Open();
-        //cmd.ExecuteNonQuery();
-
-        //Factory Method 
+        //call factory Method 
         GenClass gen = new GenClass();
         gen = gen.createObj("class1");
 
         GenClass gen2 = new GenClass("class2");
         gen2 = gen.createObj("class2");
-
-
-
-        //Polymorphic Ex. 
-        //GenClass gen = new Class1();
-        //GenClass gen2 = new Class2();
 
         ViewBag.Title = gen2.getString();
         ViewBag.Message = gen.getString();
