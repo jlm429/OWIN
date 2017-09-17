@@ -23,34 +23,21 @@ public class GenClass
  
   }
 
-  //create 
+  //create (factory method)
   public GenClass createObj(String arg)
   {
     if (arg.Equals("class1"))
     {
-      gen = Class1Factory();
+      gen = new Class1();
     }
     else
     {
-      gen = Class2Factory();
+      gen = new Class2();
     }
     return gen;
   }
 
-  
-  // factory methods (typically would be used to avoid subclassing)
 
-  public Class1 Class1Factory()
-  {
-    Class1 obj = new Class1();
-    return obj; 
-  }
-
-  public Class2 Class2Factory()
-  {
-    Class2 obj2 = new Class2();
-    return obj2; 
-  }
 
   public GenClass getObj()
   {
